@@ -2,4 +2,73 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: burlywood;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(233, 208, 176);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.profile {
+  position: relative;
+}
+
+.userimage {
+  width: 180px;
+  height: 120px;
+  padding: 15px 20px;
+}
+
+h4 {
+  margin-top: -15px;
+  padding: 0px 50px;
+}
+
+.toggle1 {
+  position: absolute;
+  width: 40px;
+  top: 50px;
+  right: -20px;
+  background-color: rgb(209, 159, 93);
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+}
+
+.search {
+  padding: 5px 25px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  margin-left: 15px;
+  padding: 0px 10px;
+  height: 35px;
+  opacity: 50%;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.links {
+  padding: 5px 25px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.links p {
+  display: flex;
+  align-items: center;
 }
