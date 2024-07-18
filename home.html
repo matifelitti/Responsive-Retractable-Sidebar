@@ -19,30 +19,54 @@
         </div>
 
         <div class="profile">
-            <div><img class="userimage" src="/images/imageuser.png">
-            </div>
+            <div><img class="userimage" src="/images/imageuser.png"></div>
             <h4>John Bradley</h4>
 
-            <img class="toggle1" src="/images/toggle1.png">
+            <img class="toggle1" src="/images/toggle1.png" onclick="toggleSidebar()">
         </div>
 
         <div class="search">
-            <img src="/images/search.png">
+            <img src="/images/search.png" class="link-container">
             <input type="text" placeholder="search >>">
         </div>
 
         <div class="links">
-            <div><img src="/images/home.png">
-                <p>Home</p>
+            <div class="link-container">
+                <img src="/images/home.png">
+                <a href="#">Home</a>
             </div>
-            <div><img src="/images/messages.png">Messages</div>
-            <div><img src="/images/inbox.png">Inbox</div>
-            <div><img src="/images/properties.png">Properties</div>
-            <div><img src="/images/logout.png">Logout</div>
+            <div class="link-container">
+                <img src="/images/messages.png">
+                <a href="#">Messages</a>
+            </div>
+            <div class="link-container">
+                <img src="/images/inbox.png">
+                <a href="#">Inbox</a>
+            </div>
+            <div class="link-container">
+                <img src="/images/properties.png">
+                <a href="#">Properties</a>
+            </div>
+            <div class="link-container">
+                <img src="/images/logout.png">
+                <a href="#">Logout</a>
+            </div>
         </div>
 
-
     </nav>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('collapsed');
+        }
+
+        const toggle1 = document.querySelector('.toggle1');
+
+        toggle1.addEventListener('click', function () {
+            this.classList.toggle('active');
+        });
+    </script>
 
 </body>
 
