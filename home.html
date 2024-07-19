@@ -11,18 +11,13 @@
 <body>
 
     <nav class="sidebar">
-        <div class="dark-mode">
-            <div class="dark-white">
-                <i class="dark"></i>
-                <i class="white"></i>
-            </div>
-        </div>
 
         <div class="profile">
             <div><img class="userimage" src="/images/imageuser.png"></div>
             <h4>John Bradley</h4>
-
-            <img class="toggle1" src="/images/toggle1.png" onclick="toggleSidebar()">
+            <div class="toggle1">
+                <img src="/images/toggle1.png" alt="Toggle Image">
+            </div>
         </div>
 
         <div class="search">
@@ -53,20 +48,13 @@
             </div>
         </div>
 
+        <div class="dark-mode">
+            <img src="/images/moon.png" alt="Moon Image">
+        </div>
+
     </nav>
 
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.classList.toggle('collapsed');
-        }
-
-        const toggle1 = document.querySelector('.toggle1');
-
-        toggle1.addEventListener('click', function () {
-            this.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
