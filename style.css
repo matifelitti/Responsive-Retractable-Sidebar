@@ -1,9 +1,21 @@
+:root {
+  --body-color: #b5d48f;
+  --sidebar-color: #8da876;
+  --links-container-hover: #49692f;
+  --toggle-color: #6e835c;
+  --toggle-color-hover: #7e9768;
+
+  --body-darkmode-color: rgb(30, 43, 19);
+  --sidebar-darkmode-color: #37412e;
+  --links-container-darkmode-hover: #233317;
+  --toggle-color-darkmode: #2d3526;
+  --toggle-color-darkmode-hover: #38422f;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: var(--body-color);
 }
 
 .sidebar {
@@ -12,7 +24,7 @@ body {
   left: 0;
   width: 300px;
   height: 100%;
-  background-color: #e9d0b0;
+  background-color: var(--sidebar-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   transition: width 0.3s ease;
 }
@@ -28,7 +40,6 @@ body {
   width: 95px;
   height: 80px;
   border-radius: 50%;
-  margin-bottom: 10px;
   transition: opacity 0.3s ease;
 }
 
@@ -41,11 +52,11 @@ h4 {
 
 .toggle1 img {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   top: 20px;
-  right: 10px;
-  background-color: #d17f5d;
+  right: -20px;
+  background-color: var(--toggle-color);
   color: white;
   border-radius: 50%;
   cursor: pointer;
@@ -54,7 +65,7 @@ h4 {
 }
 
 .toggle1 img:hover {
-  background-color: #bf6f4b;
+  background-color: var(--toggle-color-hover);
   transform: scale(1.1) rotate(180deg);
 }
 
@@ -68,26 +79,25 @@ h4 {
 
 .search {
   padding: 10px 10px;
-  margin: 10px;
-  margin-bottom: 20px;
+  margin: 0px 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--body-color);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .search input[type="text"] {
   flex: 1;
   padding: 10px;
+  font-size: 16px;
   border: none;
   outline: none;
-  background-color: transparent;
+  background-color: var(--body-color);
   transition: opacity 0.3s ease;
 }
 
 .search img {
-  padding: 0;
-  margin: 0;
   width: 30px;
 }
 
@@ -101,12 +111,12 @@ h4 {
 .links .link-container {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px;
   transition: background-color 0.3s ease;
 }
 
 .links .link-container:hover {
-  background-color: #d17f5d;
+  background-color: var(--links-container-hover);
 }
 
 .links img {
@@ -128,7 +138,7 @@ h4 {
 }
 
 .collapsed {
-  width: 70px;
+  width: 90px;
 }
 
 .collapsed .userimage,
@@ -140,32 +150,50 @@ h4 {
 
 .dark-mode {
   position: absolute;
+  margin: 7px;
+  padding: 20px;
   width: 32px;
   height: 32px;
-  padding: 20px;
   cursor: pointer;
 }
 
 .dark-color {
-  background-color: black;
+  background-color: var(--body-darkmode-color);
+}
+
+.dark-color .dark-mode {
+  filter: brightness(0) invert(1);
+}
+
+.dark-color .toggle1 img {
+  background-color: var(--toggle-color-darkmode);
+}
+
+.dark-color .toggle1 img:hover {
+  background-color: var(--toggle-color-darkmode-hover);
   color: white;
 }
 
 .dark-color .sidebar {
-  background-color: #333333;
+  background-color: var(--sidebar-darkmode-color);
   color: white;
 }
 
 .dark-color .search input[type="text"] {
+  background-color: var(--body-darkmode-color);
   color: white;
 }
 
 .dark-color .search {
-  background-color: #333333;
+  background-color: var(--body-darkmode-color);
 }
 
 .dark-color .links a {
   color: white;
+}
+
+.dark-color .links .link-container:hover {
+  background-color: var(--links-container-darkmode-hover);
 }
 
 .dark-color .search img {
