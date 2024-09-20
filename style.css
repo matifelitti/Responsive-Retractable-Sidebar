@@ -30,8 +30,9 @@ body {
   max-height: 100vh;
   transition: width 0.3s ease;
 }
+
 .profile {
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,9 +71,9 @@ h4 {
 }
 
 .search {
-  padding: 10px 10px;
-  margin: 0px 20px;
-  margin-bottom: 10px;
+  padding: 0.6rem;
+  margin: 0 1.25rem;
+  margin-bottom: 0.6rem;
   display: flex;
   align-items: center;
   background-color: var(--body-color);
@@ -80,8 +81,8 @@ h4 {
 }
 
 .search input[type="text"] {
-  padding: 10px;
-  font-size: 16px;
+  padding: 0.6rem;
+  font-size: 1rem;
   border: none;
   outline: none;
   background-color: var(--body-color);
@@ -94,13 +95,13 @@ h4 {
 .links {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .links .link-container {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 0.6rem;
   transition: background-color 0.3s ease;
 }
 
@@ -111,7 +112,7 @@ h4 {
 
 .links img {
   width: 30px;
-  margin-right: 10px;
+  margin-right: 0.6rem;
 }
 
 .links a {
@@ -142,8 +143,8 @@ h4 {
 
 .collapsed .links .link-container a {
   position: absolute;
-  margin-left: 125px;
-  padding: 10px;
+  margin-left: 7.8rem;
+  padding: 0.6rem;
   background-color: var(--links-container-hover);
   border-radius: 10px;
   opacity: 0;
@@ -152,14 +153,14 @@ h4 {
 }
 
 .collapsed .links .link-container:hover a {
-  margin-left: 80px;
+  margin-left: 5rem;
   opacity: 1;
   pointer-events: auto;
 }
 
 .dark-mode {
-  margin: 7px;
-  padding: 20px;
+  margin: 0.4rem;
+  padding: 1.25rem;
   width: 32px;
   height: 32px;
   color: white;
@@ -220,7 +221,7 @@ h4 {
   }
 
   .links .link-container a {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .toggle1 img {
@@ -264,7 +265,7 @@ h4 {
   }
 
   .links .link-container a {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
   .toggle1 img {
