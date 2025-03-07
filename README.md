@@ -1,12 +1,29 @@
-# Responsive Retractable Sidebar
+# 📂 Responsive Retractable Sidebar  
 
-This project demonstrates a responsive and retractable sidebar implemented using HTML, CSS, and JavaScript.
+This project showcases a **responsive and retractable sidebar** built using **HTML, CSS, and JavaScript**. The sidebar dynamically adjusts to different screen sizes and includes interactive elements for an enhanced user experience.  
 
-## Features
+## 🚀 Features  
 
-- Responsive Design: The sidebar adapts its width and content layout based on the screen size using media queries.
-- Toggle Functionality: Users can expand or collapse the sidebar by clicking on the toggle button, which adjusts the sidebar's width and hides/shows certain elements.
-- Profile Section: Displays user profile information including an image, name, and a toggle button for sidebar interaction.
-- Search Bar: Allows users to input search queries with an icon for visual representation.
-- Navigation Links: Provides links to various sections like Home, Messages, Inbox, Properties, and Logout.
-- Dark Mode: Supports a dark mode feature that changes the color scheme of the sidebar and adjusts elements for better visibility in low-light environments.
+- **📱 Responsive Design** – Adapts to various screen sizes using media queries for a seamless experience.  
+- **🔄 Toggle Functionality** – Expand or collapse the sidebar with a **toggle button**, dynamically adjusting its width and visibility.  
+- **🧑‍💼 Profile Section** – Displays user profile details, including an **image, name**, and an interactive **toggle button**.  
+- **🔍 Search Bar** – Allows users to enter search queries with a visually appealing search icon.  
+- **🗂️ Navigation Links** – Provides quick access to sections like **Home, Messages, Inbox, Properties,** and **Logout**.  
+- **🌙 Dark Mode** – Enables a **dark mode toggle**, adjusting the sidebar's color scheme for a comfortable low-light experience.  
+
+## 🛠️ Technologies Used  
+
+- **HTML5** – Structuring the sidebar elements.  
+- **CSS3** – Styling with responsive media queries.  
+- **JavaScript (ES6+)** – Handling interactivity, toggle animations, and dark mode functionality.  
+
+## 📌 Getting Started  
+
+1. **Clone the Repository**  
+   ```sh
+   git clone https://github.com/matifelitti/responsive-sidebar.git  
+   cd responsive-sidebar  
+   ```  
+2. **Open the Project**  
+   - Locate the `index.html` file.  
+   - Open it in a web browser.  
